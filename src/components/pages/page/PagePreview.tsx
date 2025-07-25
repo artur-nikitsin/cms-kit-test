@@ -18,6 +18,7 @@ export default function PagePreview(props: Props) {
   const { data } = useQuery<PagePayload | null>(pagesBySlugQuery, params, {
     initial,
   })
+  return null;
 
   return <Page data={data!} />
 }
